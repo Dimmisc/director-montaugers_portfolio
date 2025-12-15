@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    line-height: 1.6;
+    transition: padding-top 0.45s ease; 
+}
+h3 {
+    padding: 0;
+    margin: 0;
+}
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+    transition: transform 0.45s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: rgba(184, 184, 184, 0.9);
+    height: 50px; 
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.main-header h3 {
+    margin-top: 0.9%;
+    margin-bottom: 0.82%;
+}
+
+.main-header .main-header-cont {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.main-header-cont {
+    display: flex;
+    padding-right: 1.5%;
+}
+.main-header-cont button{
+    border: none;
+    border-radius: 12px;
+    margin-left: 2%;
+    padding: 5px 10px;
+
+}
+.language-switch {
+    border-radius: 10px;
+    background-color: antiquewhite;
+}
+.video-container {
+    width: 100%;
+    height: 55.625vw;
+    padding-top: 50px;
+    position: relative; 
+    overflow: hidden; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+
+    z-index: 0; 
+    filter: blur(20px); 
+    transform: scale(1.1); 
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.video-content {
+    position: relative;
+    z-index: 2; 
+    color: white;
+    text-align: center;
+}
+
+.bt-pl {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 20px;
+}
+
+.expirience {
+    background-color:bisque;
+    padding-top: 2%;
+    
+}
+.expirience h2 {
+    margin-left: 2%;
+}
+
+.expirience .container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.small-video-container {
+    margin: 1%;
+    height: 30vw;
+    background-color:black;
+}
+
+.small-video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+
+    z-index: 20; 
+}
+.small-video-container {
+    height: 55.625vb;
+    border-radius: 15px;
+    padding-top: 50px;
+    position: relative; 
+    overflow: hidden; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.under-title {
+    text-align: center;
+}
+.header-hidden {
+    transform: translateY(-100%); /* Сдвигаем его вверх за пределы экрана */
+}   

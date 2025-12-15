@@ -1,14 +1,76 @@
 <!DOCTYPE html>
 <html>
     <head>
-        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
     </head>
     <body>
-        <header>
-
+        <header class="main-header">
+            <h3>The sharp</h3>
+            <div class="main-header-cont">
+                <button class="btn-main">Main</button>
+                <button class="btn-proj">Projects</button>
+                <button class="btn-about">About</button>
+                <button class="language-switch">en</button>
+            </div>
         </header>
-        <footer>
+        <section class="main">
+            <div class="video-container">
+                <video id="myVideo" autoplay muted loop playsinline>
+                    <source src="../data/test2.mp4" type="video/mp4">
+                </video>
+                <div class="video-overlay"></div>
+                <div class="video-content">
+                    <h2>This is a specific Video Block</h2>
+                    <p>The video stays inside this 400px container.</p>
+                    <button onclick="togglePlay()" class="bt-pl">Pause/Play</button>
+                </div>
+            </div>
+        </section>
+        <section class="expirience">
+            <h2>My projects:    </h2>
+            <div class="container">
+                <div class="small-video-container">
+                    <video id="myVideo" autoplay muted loop playsinline>
+                        <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Background.mp4" type="video/mp4">
+                    </video>
+                    <h3 class="under-title">Project1</h3>
+                </div>
+                <div class="small-video-container">
+                    <video id="myVideo" autoplay muted loop playsinline>
+                        <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Background.mp4" type="video/mp4">
+                    </video>
+                    <h3 class="under-title">Project2</h3>
+                </div>
+                <div class="small-video-container">
+                    <video id="myVideo" autoplay muted loop playsinlinex>
+                        <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Background.mp4" type="video/mp4">
+                    </video>
+                    <h3 class="under-title">Project3</h3>
+                </div>
+                <div class="small-video-container">
+                    <video id="myVideo" autoplay muted loop playsinline>
+                        <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Background.mp4" type="video/mp4">
+                    </video>
+                    <h3 class="under-title">Project4</h3>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="left">
+                <h2 class="title-img">Maxim Sharapov</h2>
+                <img src="../data/sharp.jpg">
+            </div>
+            <div class="right">
+                <h3 class="tex-title">I am wonderful boy</h3>
+                <p>Twwwwww</p>
+            </div>
+        </section>
+        <footer>        
 
         </footer>
+
+        <script type="module" src="main.js" ></script>
     </body>
 </html>
