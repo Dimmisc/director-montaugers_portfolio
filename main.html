@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,21 +22,23 @@
         </nav>
         <div class="lang-switch">
             <button class="nav-btn theme-btn" id="themeBtn" aria-label="Toggle Theme">
-            <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="12" r="5"></circle>
-                <line x1="12" y1="1" x2="12" y2="3"></line>
-                <line x1="12" y1="21" x2="12" y2="23"></line>
-                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                <line x1="1" y1="12" x2="3" y2="12"></line>
-                <line x1="21" y1="12" x2="23" y2="12"></line>
-                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-            </svg>
-            <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none;">
-                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-            </svg>
-        </button>
+                <!-- Sun Icon -->
+                <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <!-- Moon Icon -->
+                <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none;">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
             <button class="nav-btn lang-btn" id="langBtn">EN</button>
         </div>
     </header>
@@ -45,7 +47,8 @@
     <section id="main" class="hero-section">
         <div class="video-bg-container">
             <video class="bg-video" autoplay muted loop playsinline>
-                <source src="data/showreel.mp4" type="video/mp4">
+                <source src="data/video/showreel.webm" type="video/webm">
+                <source src="data/video/showreel.mp4" type="video/mp4">
             </video>
             <div class="video-overlay"></div>
         </div>
@@ -58,6 +61,7 @@
                     <h3 data-lang="serv_edit_title">VIDEO EDIT</h3>
                     <p data-lang="serv_edit_desc">Includes: edit, sound-design, graphics, motion</p>
                 </div>
+                <!-- Vertical Divider (becomes horizontal on mobile via CSS) -->
                 <div class="service-divider"></div>
                 <div class="service-block">
                     <h3 data-lang="serv_color_title">COLOR GRADING</h3>
@@ -66,8 +70,8 @@
             </div>
 
             <div class="hero-buttons">
-                <button class="btn-outline" onclick="scrollToSection('projects')" data-lang="btn_projects">VIEW PROJECTS</button>
-                <button class="btn-outline" onclick="window.open('https://t.me/Maks_sharp', '_blank')" data-lang="btn_contact">CONTACT</button>
+                <button class="btn-outline scroll-trigger" data-target="projects" data-lang="btn_projects">VIEW PROJECTS</button>
+                <button class="btn-outline contact-trigger" data-lang="btn_contact">CONTACT</button>
             </div>
         </div>
     </section>
@@ -77,15 +81,15 @@
         <h2 class="section-title" data-lang="sec_works">SELECTED WORKS</h2>
         
         <div class="slider-container">
-            
-            <!-- SLIDES WRAPPER -->
+
             <div class="slider-wrapper">
-                
+            
                 <!-- Project 1 -->
                 <div class="project-slide active">
                     <div class="slide-media">
-                        <video muted loop playsinline autoplay>
-                            <source src="data/shotmovie.mp4" type="video/mp4">
+                        <video class="project-video" loop playsinline preload="none" poster="data/preview/One-shot_Preview.jpg" controls>
+                            <source data-src="data/video/One-shot.webm" type="video/webm">
+                            <source data-src="data/video/One-shot.mp4" type="video/mp4">
                         </video>
                     </div>
                     <div class="slide-content">
@@ -94,12 +98,13 @@
                         <a href="#" class="slide-link">Watch Full Video &rarr;</a>
                     </div>
                 </div>
-
+            
                 <!-- Project 2 -->
                 <div class="project-slide">
                     <div class="slide-media">
-                        <video muted loop playsinline>
-                            <source src="data/interview.mp4" type="video/mp4">
+                        <video class="project-video" loop playsinline preload="none" poster="data/preview/interview_Preview.jpg" controls>
+                            <source data-src="data/video/interview.webm" type="video/webm">
+                            <source data-src="data/video/interview.mp4" type="video/mp4">
                         </video>
                     </div>
                     <div class="slide-content">
@@ -108,12 +113,13 @@
                         <a href="#" class="slide-link">Watch Full Video &rarr;</a>
                     </div>
                 </div>
-
+            
                 <!-- Project 3 -->
                 <div class="project-slide">
                     <div class="slide-media">
-                        <video muted loop playsinline>
-                            <source src="data/report.mp4" type="video/mp4">
+                        <video class="project-video" loop playsinline preload="none" poster="data/preview/report_preview.jpg" controls>
+                            <source data-src="data/video/report.webm" type="video/webm">
+                            <source data-src="data/video/report.mp4" type="video/mp4">
                         </video>
                     </div>
                     <div class="slide-content">
@@ -122,12 +128,13 @@
                         <a href="#" class="slide-link">Watch Full Video &rarr;</a>
                     </div>
                 </div>
-
+            
                 <!-- Project 4 -->
                 <div class="project-slide">
                     <div class="slide-media">
-                        <video muted loop playsinline>
-                            <source src="data/klip.mp4" type="video/mp4">
+                        <video class="project-video" loop playsinline preload="none" poster="data/preview/letter_Preview.jpg" controls>
+                            <source data-src="data/video/letter.webm" type="video/webm">
+                            <source data-src="data/video/letter.mp4" type="video/mp4">
                         </video>
                     </div>
                     <div class="slide-content">
@@ -138,21 +145,20 @@
                 </div>
             </div>
 
-            <!-- SLIDER CONTROLS -->
             <div class="slider-controls">
-                <button class="slider-arrow prev-btn" onclick="changeSlide(-1)">
+                <button class="slider-arrow prev-btn" id="prevSlide" aria-label="Previous Slide">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M15 18l-6-6 6-6"/>
                     </svg>
                 </button>
-                <button class="slider-arrow next-btn" onclick="changeSlide(1)">
+                <button class="slider-arrow next-btn" id="nextSlide" aria-label="Next Slide">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M9 18l6-6-6-6"/>
                     </svg>
                 </button>
             </div>
-
-        </div>
+            
+        </div> 
     </section>
 
     <!-- About Section -->
@@ -169,7 +175,7 @@
                     With experience in short films, broadcast television, and music videos, 
                     I bring a unique perspective to every project.
                 </p>
-                <button class="btn-primary" onclick="window.open('https://t.me/Maks_sharp', '_blank')" data-lang="btn_touch">GET IN TOUCH</button>
+                <button class="btn-primary contact-trigger" data-lang="btn_touch">GET IN TOUCH</button>
             </div>
         </div>
     </section>
