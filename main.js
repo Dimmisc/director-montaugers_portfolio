@@ -188,11 +188,20 @@ document.addEventListener('DOMContentLoaded', () => {
             
             sec_works: "SELECTED WORKS",
             
-    
-    
-            proj_1_title: 'Short Film "Red Butterfly"',
-            proj_1_desc: "Production, Edit, Sound Design, Color Grading",
+            proj_1_title: "One-shot / Color Grading",
+            proj_1_desc: "High-end cinematic grading using DCTL and Dehancer profiles in complex lighting environments.",
             
+            proj_2_title: 'Multicam Interview',
+            proj_2_desc: "conversational format editing. Using L/J-cuts and multicam techniques to build natural dialogue dynamics.",
+            
+            proj_3_title: 'TV Reportage for OTR',
+            proj_3_desc: "Broadcast editing under tight deadlines. Clear structure, professional rhythm, and precise sound mixing.",
+            
+            proj_4_title: "Narrative Short (Contest Winner)",
+            proj_4_desc: "Creating a compelling story with clear dramaturgy. Focus on rhythm, pacing, and emotional impact.",
+            
+            btn_watch: "Watch in 4K Quality &rarr;",
+
             about_name: "MAXIM SHARAPOV",
             about_role: "Video Editor & Colorist",
             about_text: "I specialize in creating cinematic visuals and compelling narratives. With experience in short films, broadcast television, and music videos, I bring a unique perspective to every project.",
@@ -214,9 +223,20 @@ document.addEventListener('DOMContentLoaded', () => {
             
             sec_works: "ИЗБРАННЫЕ РАБОТЫ",
                 
-            proj_1_title: 'К/ф "Красная Бабочка"',
-            proj_1_desc: "Продакшн, Монтаж, Саунд-дизайн, Цветокоррекция",
+            proj_1_title: "One-shot / Цветокоррекция",
+            proj_1_desc: "Кинематографичный грейдинг с использованием DCTL и Dehancer в сложной световой среде.",
+
+            proj_2_title:'Мультикамерное интервью',
+            proj_2_desc: "Сборка разговорного формата. Использование L/J-cuts и выстраивание живой динамики.",
+
+            proj_3_title: 'Репортаж для телеканала ОТР',
+            proj_3_desc: "Эфирный монтаж под жесткий дедлайн. Четкая структура, ритм и работа со звуком.",
             
+            proj_4_title: "Сюжетный ролик (Победитель конкурса)",
+            proj_4_desc: "Создание цельной истории с ясной драматургией. Акцент на ритме и эмоциях.",
+
+            btn_watch: "Смотреть в 4K качестве &rarr;",
+
             about_name: "МАКСИМ ШАРАПОВ",
             about_role: "Режиссер монтажа и Колорист",
             about_text: "Я специализируюсь на создании кинематографичных видео и захватывающих историй. Имея опыт работы в коротком метре, на телевидении и в музыкальных клипах, я привношу уникальный взгляд в каждый проект.",

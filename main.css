@@ -1,37 +1,38 @@
 :root {
     --bg-color: #0F0E0D;
     --text-color: #F0EAD6;
-    --accent-color: #D4C5A9;
-    --baccent-color: #F5F2EB;
+    --ac-text-color: #0F0E0D;
+    --accent-color: #ccb996;
     --secondary-text: #A8A095;
+    --back-text: #0F0E0D;
     --header-bg: rgba(24, 22, 21, 0.9); 
-    --card-bg: #000; 
-    --arrow-border: rgba(255, 255, 255, 0.2);
-    --icon-color: #F0EAD6;
+    --ac-arrow-border-color: #D4C5A9;
     --bej-color: #F0EAD6;
     --lbej-color: #E3D7BF;
     --back-color: #0F0E0D;
+    --secondary-href: #F0EAD6;
+    --back-pri-btn: #ccb996;
+    --back-button-color: #0F0E0D;
     --black-5: rgba(0, 0, 0, 0.5);
     --white-3: rgba(255, 255, 255, 0.3);
     --white-1: rgba(255, 255, 255, 0.2);
-    --white-5: rgba(255, 255, 255, 0.5);
     --transition-speed: 0.3s;
+    --color-change-duration: 0.5s;
 }
 
 body.light-theme {
-    --bg-color: #F5F2EB; 
+    --bg-color: #ACAAAF; 
     --text-color: #1A1A1A; 
-    --accent-color: #d5bb8e;
-    --back-color: #F5F2EB;
-    --secondary-text: #555555;
-    --header-bg: rgba(222, 216, 199, 0.9);
-    --card-bg: #E0E0E0;
-    --arrow-border: rgba(0, 0, 0, 0.2);
-    --icon-color: #1A1A1A;
-    --white-1: rgba(0, 0, 0, 0.1);
-    --baccent-color: #000;
-    --bej-color: #1A1A1A;
-    --lbej-color: #eac67f;
+    --secondary-href: #8B7355;
+    --ac-arrow-border-color: #ACAAAF;
+    --back-text: #0F0E0D;
+    --secondary-text: #383838;
+    --header-bg: rgba(192, 188, 180, 0.8);
+    --white-1: rgba(0, 0, 0, 0.2);
+    --white-3: rgba(0, 0, 0, 0.7);
+    --bej-color: #f0e4c7;
+    --back-pri-btn: #d8d8d8;
+    --back-button-color: #d8d8d8;
 }
 
 body {
@@ -152,7 +153,7 @@ body {
     font-size: 3rem;
     font-weight: 800;
     line-height: 1.1;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     letter-spacing: 2px;
     color: #F0EAD6;
 }
@@ -209,8 +210,8 @@ body {
 
 /* Buttons */
 .btn-primary {
-    background-color: var(--accent-color);
-    color: var(--back-color); 
+    background-color: var(--back-pri-btn);
+    color: var(--ac-text-color);
     border: none;
     padding: 15px 35px;
     border-radius: 30px;
@@ -222,7 +223,7 @@ body {
 
 .btn-primary:hover {
     transform: scale(1.05);
-    background-color: var(--lbej-color); 
+    background-color: var(--bej-color); 
 }
 
 .btn-outline {
@@ -346,7 +347,7 @@ body {
 
 .slide-link {
     display: inline-block;
-    color: var(--accent-color);
+    color: var(--secondary-href);
     text-decoration: none;
     font-weight: 600;
     font-size: 1rem;
@@ -376,8 +377,8 @@ body {
 
 .slider-arrow {
     pointer-events: auto;
-    background: var(--back-color);
-    border: 2px solid var(--accent-color);
+    background: var(--back-button-color);
+    border: 2px solid var(--ac-arrow-border-color);
     color: var(--text-color);
     width: 60px;
     height: 60px;
@@ -391,9 +392,9 @@ body {
 }
 
 .slider-arrow:hover {
-    background-color: var(--lbej-color);
-    border-color: var(--lbeg-color);
-    color: var(--back-color);
+    background-color: var(--bej-color);
+    border-color: var(--ac-arrow-border-color);
+    color: var(--back-text);
     transform: scale(1.1);
 }
 
@@ -404,7 +405,7 @@ body {
 
 /* --- ABOUT SECTION --- */
 .about-section {
-    padding: 100px 10%;
+    padding: 100px 5%;
     background-color: var(--bg-color);
     transition: background-color 0.5s ease;
 }
@@ -485,6 +486,7 @@ footer {
     .services-info {
         flex-direction: column;
         align-items: center;
+        gap: 0px;
     }
     
     /* Horizontal Divider for Mobile */
@@ -587,7 +589,9 @@ footer {
         width: 50px;
         height: 50px;
     }
-
+    .about-section {
+        padding-top: 50px;
+    }
     /* About Mobile */
     .about-container {
         flex-direction: column;
@@ -600,5 +604,14 @@ footer {
         height: 250px;
         object-fit: cover;
         border-radius: 50%;
+    }
+}
+@media (max-width: 400px) {
+    .logo {
+        font-size: 0.9rem;
+    }
+
+    .hero-title {
+        font-size: 1.5rem;
     }
 }
