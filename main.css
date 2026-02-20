@@ -18,21 +18,23 @@
     --white-1: rgba(255, 255, 255, 0.2);
     --transition-speed: 0.3s;
     --color-change-duration: 0.5s;
+    --bg-transperent-color: #000;
 }
 
 body.light-theme {
-    --bg-color: #ACAAAF; 
+    --bg-color: #ebe8f0; 
     --text-color: #1A1A1A; 
     --secondary-href: #8B7355;
-    --ac-arrow-border-color: #ACAAAF;
+    --ac-arrow-border-color: #ebe8f0;
     --back-text: #0F0E0D;
     --secondary-text: #383838;
-    --header-bg: rgba(192, 188, 180, 0.8);
+    --header-bg: rgba(200, 196, 204, 0.8);
     --white-1: rgba(0, 0, 0, 0.2);
     --white-3: rgba(0, 0, 0, 0.7);
-    --bej-color: #f0e4c7;
-    --back-pri-btn: #d8d8d8;
-    --back-button-color: #d8d8d8;
+    --bej-color: #F0EAD6;
+    --back-pri-btn: #ccb996;
+    --back-button-color: #ccb996;
+    --bg-transperent-color: #000;
 }
 
 body {
@@ -251,6 +253,7 @@ body {
     flex-direction: column;
     align-items: center;
     transition: background-color 0.5s ease;
+    background: linear-gradient(var(--bg-transperent-color) -2%, var(--bg-color) 20%);
 }
 
 .section-title {
@@ -259,11 +262,14 @@ body {
     margin-bottom: 30px;
     text-align: center;
     font-weight: 800;
+    font-size: 3rem;
+    z-index: 41;
 }
 
 .slider-container {
     position: relative;
     width: 100%;
+    min-height: 500px;
     max-width: 1600px;
     padding: 0 120px; 
     box-sizing: border-box;
@@ -298,7 +304,7 @@ body {
     height: auto;
     background: #000;
     border-radius: 20px;
-    box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+    box-shadow: 0 30px 30px rgba(0,0,0,0.3);
     border: 1px solid var(--white-1);
     overflow: hidden;
     display: flex;
@@ -517,6 +523,7 @@ footer {
         padding: 50px 0;
         width: 100%;
         overflow-x: hidden;
+        background: linear-gradient(var(--bg-transperent-color) -1%, var(--bg-color) 20%);
     }
 
     .slider-container {
@@ -542,7 +549,7 @@ footer {
 
     .slide-media {
         width: 100%;
-        max-width: 500px;
+        max-width: 750px;
         height: auto;
         aspect-ratio: 16 / 9;
         margin: 0 auto;
@@ -563,6 +570,8 @@ footer {
         font-size: 1.8rem;
         margin-bottom: 15px;
         line-height: 1.2;
+        min-height: 70px;
+        text-align: center;
     }
 
     .slide-desc {

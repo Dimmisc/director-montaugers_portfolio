@@ -204,7 +204,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             about_name: "MAXIM SHARAPOV",
             about_role: "Video Editor & Colorist",
-            about_text: "I specialize in creating cinematic visuals and compelling narratives. With experience in short films, broadcast television, and music videos, I bring a unique perspective to every project.",
+            about_text: "I specialize in creating cinematic visuals and compelling narratives. With experience in short films and broadcast television, I bring a unique perspective to every project.",
             btn_touch: "GET IN TOUCH"
         },
         ru: {
@@ -239,7 +239,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             about_name: "МАКСИМ ШАРАПОВ",
             about_role: "Режиссер монтажа и Колорист",
-            about_text: "Я специализируюсь на создании кинематографичных видео и захватывающих историй. Имея опыт работы в коротком метре, на телевидении и в музыкальных клипах, я привношу уникальный взгляд в каждый проект.",
+            about_text: "Я специализируюсь на создании кинематографичных видео и захватывающих историй. Имея опыт работы в коротком метре и на телевидении, я привношу уникальный взгляд в каждый проект.",
             btn_touch: "НАПИСАТЬ МНЕ"
         }
     };
