@@ -64,7 +64,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const video = slide.querySelector('video');
         if (!video) return;
 
-
         const sources = video.querySelectorAll('source');
         let sourceChanged = false;
 
@@ -81,15 +80,12 @@ document.addEventListener('DOMContentLoaded', () => {
             video.load();
         }
 
-
-        video.currentTime = 0;
-        video.muted = true
-        
+        video.muted = true; 
 
         const playPromise = video.play();
         if (playPromise !== undefined) {
             playPromise.catch(error => {
-                console.log("Auto-play prevented by browser. User must interact first.");
+                console.log("Auto-play prevented. User interaction needed.");
             });
         }
     }
