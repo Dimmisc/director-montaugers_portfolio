@@ -1,0 +1,5 @@
+:HL["/next-assets/static/css/dd840b22d44baa36.css","style"]
+3:[["children",{"s":"__PAGE__","h":160}]]
+2:[["children",{"s":{"n":"segments","t":"oc","k":"work/ranta-residence","s":["_not-found","_global-error","en","ru"]},"h":65632,"c":"$Q3"}]]
+1:[["children",{"s":"(default)","h":131184,"c":"$Q2"}]]
+0:{"b":"l4-NTN5EFRllhfZ-pMVC5","t":{"t":{"s":"","h":131152,"c":"$Q1"}}}
